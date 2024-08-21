@@ -2,3 +2,106 @@
 
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
+
+:root {
+  --bs-body-bg: #ece6d3;
+  // --bs-body-color: #283618;
+  // --bs-emphasis-color-rgb: #fdf0d5;
+  // --bs-font-sans-serif: "Source Code Pro Variable", monospace;
+  --bs-font-sans-serif: "Roboto", sans-serif;
+
+  --bs-danger-text-emphasis: #e85748;
+  // --bs-offcanvas-width: 100%;
+}
+
+.wrapper {
+  background: #9eb7b8;
+}
+
+.navbar-brand,
+.main-title,
+.main-form-title {
+  font-family: "Bungee", system-ui;
+}
+.nav-container {
+  border-bottom: 2px solid #ece6d3;
+}
+
+.nav-link,
+.button-wrapper a {
+  text-transform: uppercase;
+}
+
+.sidebar {
+  // background: #8338ec;
+}
+
+// i {
+//   color: #3a86ff;
+// }
+
+.main-icon {
+  font-size: 20rem;
+  color: #007a95;
+}
+
+.btn-primary {
+  // background: #e07a5f;
+  background: transparent;
+}
+
+.btn-primary:hover {
+  background: #fb5607;
+}
+
+.sign-up-button {
+  font-weight: 900;
+}
+
+.order-button {
+  color: #007a95;
+}
+
+.login-button {
+  color: #ece6d3;
+}
+
+.main-sign-up-button {
+  color: #ece6d3;
+  font-weight: 900;
+  background: #e85748;
+}
+
+.main-form-title-span {
+  color: #e85748;
+}
+
+.form-btn {
+  background: #e85748;
+  color: #ece6d3;
+  text-transform: uppercase;
+}
+
+// .form-container {
+//   background: #f8f5f1;
+// }
+
+@media screen and (max-width: 768px) {
+  .button-wrapper a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+
+  .button-wrapper a:hover {
+    margin-left: 1rem;
+  }
+}
+
+.form-control,
+.form-select {
+  background: #f8f5f1;
+  color: #000;
+}

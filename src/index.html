@@ -4,13 +4,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap w/ Vite</title>
+  <title>Delivery App</title>
 </head>
 
 <body>
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-primary">Primary button</button>
+  <div class="wrapper w-85 mx-auto">
+
+
+    <header>
+      <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid container-lg nav-container">
+          <a class="navbar-brand fs-3" href="#">Delivery.App</a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav" aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="sidebar offcanvas offcanvas-start " tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title text-white" id="navbarNavLabel">Delivery.App</h5>
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown my-5 my-md-0">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicii
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mb-5 mb-md-0">
+                  <a class="nav-link" href="#">UrmaresteAWB</a>
+                </li>
+                <li class="nav-item mb-5 mb-md-0">
+                  <a class="nav-link" href="#">DeliveryPRO</a>
+                </li>
+              </ul>
+              <div class="button-wrapper d-flex flex-column justify-content-center align-items-start flex-md-row">
+                <a class="order-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2 " type="button"
+                  href="#">Comanda</a>
+                <a class="login-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2" href="#">Intra in Cont</a>
+                <a class="sign-up-button d-block fw-bold text-danger text-decoration-none mb-5 p-2 mb-md-0 rounded"
+                  href="#">Creaza
+                  ContGratuit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center overflow-hidden">
+          <div class="col-7 d-flex flex-column gap-5 justify-content-center align-items-center">
+            <h1 class="main-title fs-1 text-center">
+              Trimite colete online in Romania si in strainatate
+            </h1>
+            <div class="button-wrapper d-flex flex-column justify-content-center align-items-start flex-md-row">
+              <a class="order-button d-block text-decoration-none mb-5 p-2 mb-md-0 me-md-2 " type="button"
+                href="#">Comanda</a>
+              <a class="login-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2" href="#">Intra in Cont</a>
+              <a class="main-sign-up-button d-block fw-bold text-decoration-none mb-5 p-2 mb-md-0 rounded"
+                href="#">Creaza
+                ContGratuit</a>
+            </div>
+          </div>
+          <div class="main-icon text-center col-5">
+            <i class="bi bi-truck"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container form-container">
+        <div class="row">
+          <div class="form-wrapper col-10 col-md-8 col-lg-6 col-xl-6 col-xxl-6 p-5">
+            <form action="">
+              <div class="form-floating my-5">
+                <input type="email" id="email" placeholder="my@email.com" class="form-control">
+                <label for="email">din:</label>
+              </div>
+              <div class="form-floating my-5">
+                <input type="text" id="name" placeholder="e.g David" class="form-control ">
+                <label for="name" class="form-label">pana:</label>
+              </div>
+              <div class="form-floating my-5">
+                <select id="subject" class="form-select">
+                  <option value="plic">plic doar documente</option>
+                  <option value="colet">colet</option>
+                  <option value="palet">palet</option>
+                </select>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn form-btn p-3">Calculeaza tariful</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <h3 class="main-form-title text-center">
+              Calculeaza tariful <span class="main-form-title-span">Acum</span>
+            </h3>
+          </div>
+        </div>
+        <!-- <div class="col-10 col-lg-6 col-xl-6 my-5 text-center">
+        <h1 class="fs-1">
+          Parteneri
+        </h1>
+        <div class="row d-flex justify-content-between mx-auto my-5 ">
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-bootstrap-fill fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-browser-firefox fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-airplane-fill fs-1"></i>
+          </div>
+        </div>
+        <div class="row mx-auto  d-flex justify-content-between mb-5">
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg shadow-lg">
+            <i class="bi bi-amazon fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-amd fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-android2 fs-1"></i>
+          </div>
+        </div>
+        <div class="row mx-auto d-flex justify-content-between">
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-apple fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-behance fs-1"></i>
+          </div>
+          <div class="partner-logo-wrapper col-2 rounded shadow-lg">
+            <i class="bi bi-bing fs-1"></i>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </main>
   </div>
   <script type="module" src="./js/main.js"></script>
 </body>
