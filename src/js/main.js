@@ -12,6 +12,7 @@ import * as bootstrap from "bootstrap";
 import "@fontsource/indie-flower";
 import "@fontsource/roboto";
 import "@fontsource/bungee";
+import "@fontsource/lato";
 
 // Import bootstrap icons
 import "bootstrap-icons/font/bootstrap-icons.css";
