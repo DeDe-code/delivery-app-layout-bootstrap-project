@@ -1,0 +1,50 @@
+/** @format */
+
+@use "sass:math";
+
+$utilities: (
+  "font-style": (
+    "prefix": "font",
+    "values": (
+      "uppercase": uppercase,
+    ),
+  ),
+  "font-size": (
+    "prefix": "font",
+    "values": (
+      "xxxxl": $base-font-size * 23,
+      // "sm": $font-size-sm,
+      // "md": $base-font-size,
+      // "lg": $font-size-lg,
+      // "xl": $font-size-xl,
+      // "xxl": $font-size-xxl,,,,,,,,,
+    ),
+  ),
+
+  "font-family": (
+    "prefix": "font",
+    "values": (
+      "base": $bs-font-sans-serif,
+      "main-title": $main-title,
+    ),
+  ),
+);
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $k, $v in $values {
+    @if ($k == "default") {
+      .#{$prefix} {
+        #{$property}: $v;
+      }
+    } @else {
+      .#{$prefix}-#{$k} {
+        #{$property}: $v;
+      }
+    }
+  }
+}
+
+// @debug map-get($utilities, "font");

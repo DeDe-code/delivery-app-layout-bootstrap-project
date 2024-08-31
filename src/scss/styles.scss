@@ -3,104 +3,27 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
+// variables
+@import "./variables";
+
+// base-layout
+@import "./base";
+
+// colors
+@import "./colors";
+
+// utilities
+@import "./utilities";
+
 :root {
   --bs-body-bg: #ece6d3;
-  --bs-font-sans-serif: "Lato", sans-serif;
   --bs-danger-text-emphasis: #e85748;
   --bs-focus-ring-color: #007a95;
 }
 
-.wrapper {
-  background: #9eb7b8;
-  padding: 0;
-}
-
-.navbar-brand,
-.main-title,
-.main-form-title,
-.offcanvas-title,
-.partner-title {
-  font-family: "Bungee", system-ui;
-}
-.offcanvas-title {
-  color: #000;
-}
-
-.btn-close {
-  color: #e85748;
-}
-.nav-container {
-  padding: 0;
-  border-bottom: 2px solid #ece6d3;
-}
-
-.nav-link,
-.button-wrapper a {
-  text-transform: uppercase;
-}
-
-.sidebar {
-  background: #9eb7b8;
-}
-
-// i {
-//   color: #3a86ff;
-// }
-
-.main-icon {
-  font-size: 20rem;
-  color: #007a95;
-}
-
-.btn-primary {
-  // background: #e07a5f;
-  background: transparent;
-}
-
-.btn-primary:hover {
-  background: #fb5607;
-}
-
-.sign-up-button {
-  font-weight: 900;
-}
-
-.order-button {
-  color: #007a95;
-}
-
-.login-button {
-  color: #ece6d3;
-}
-
-.main-sign-up-button {
-  color: #ece6d3;
-  font-weight: 900;
-  background: #e85748;
-}
-
-.main-form-title-span {
-  color: #e85748;
-}
-
-.form-btn {
-  background: #e85748;
-  color: #ece6d3;
-  text-transform: uppercase;
-}
-
-.partner-wrapper {
-  background: #007a95;
-}
-
 .partner-logo-wrapper {
-  background: #d4d4ca;
-  width: 7rem;
+  // width: 7rem;
 }
-
-// .form-container {
-//   background: #f8f5f1;
-// }
 
 @media screen and (max-width: 768px) {
   .button-wrapper a {
