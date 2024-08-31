@@ -7,28 +7,28 @@
   <title>Delivery App</title>
 </head>
 
-<body>
-  <div class="wrapper container mx-auto my-5">
+<body class="base-font">
+  <div class="container mx-auto my-5 p-0 bg-green-light">
     <header>
       <nav class="navbar navbar-expand-lg p-3">
-        <div class="container-fluid container-lg nav-container pb-3 pt-2">
-          <a class="navbar-brand fs-3" href="#">Delivery.App</a>
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        <div class="container-fluid container-lg px-0 pt-2 pb-3 border-3 border-bottom border-costum-white-color">
+          <a class="navbar-brand fs-3 font-main-title" href="#">Delivery.App</a>
+          <button class="navbar-toggler border-0 shadow-none " type="button" data-bs-toggle="offcanvas"
             data-bs-target="#navbarNav" aria-controls="navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="sidebar offcanvas offcanvas-xxl offcanvas-start " tabindex="-1" id="navbarNav"
+          <div class="offcanvas offcanvas-xxl offcanvas-start bg-green-light" tabindex="-1" id="navbarNav"
             aria-labelledby="navbarNavLabel">
             <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title" id="navbarNavLabel">Delivery.App</h5>
-              <button type="button" class="btn-close btn-close shadow-none" style="--bs-btn-close-color: #e85748;"
-                data-bs-dismiss="offcanvas" aria-label="Close">
+              <h5 class="offcanvas-title font-main-title" id="navbarNavLabel">Delivery.App</h5>
+              <button type="button" class="btn-close btn-close shadow-none text-red-light" data-bs-dismiss="offcanvas"
+                aria-label="Close">
               </button>
             </div>
             <div class="offcanvas-body d-flex flex-column justify-content-lg-between flex-xl-row">
               <ul class="navbar-nav align-self-lg-end align-self-xl-start">
                 <li class="nav-item dropdown my-5 my-md-0">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  <a class="nav-link dropdown-toggle uppercase" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Servicii
                   </a>
@@ -39,18 +39,16 @@
                   </ul>
                 </li>
                 <li class="nav-item mb-5 mb-md-0">
-                  <a class="nav-link" href="#">UrmaresteAWB</a>
+                  <a class="nav-link uppercase" href="#">UrmaresteAWB</a>
                 </li>
                 <li class="nav-item mb-5 mb-md-0">
-                  <a class="nav-link" href="#">DeliveryPRO</a>
+                  <a class="nav-link uppercase" href="#">DeliveryPRO</a>
                 </li>
               </ul>
-              <div class="button-wrapper d-flex flex-column justify-content-between d-lg-none d-xl-flex flex-xl-row">
-                <a class="order-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2 " type="button"
-                  href="#">Comanda</a>
-                <a class="login-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2" href="#">Intra in Cont</a>
-                <a class="sign-up-button d-block fw-bold text-danger text-decoration-none mb-5 p-2 mb-md-0 rounded"
-                  href="#">Creaza
+              <div class="d-flex flex-column justify-content-between d-lg-none d-xl-flex flex-xl-row uppercase">
+                <a class="mb-5 p-2 mb-md-0 me-md-2 text-green text-decoration-none" type="button" href="#">Comanda</a>
+                <a class="mb-5 p-2 mb-md-0 me-md-2 text-white text-decoration-none" href="#">Intra in Cont</a>
+                <a class="d-block mb-5 p-2 mb-md-0 text-red-light fw-bold text-decoration-none" href="#">Creaza
                   ContGratuit</a>
               </div>
             </div>
@@ -63,19 +61,18 @@
         <div
           class="row d-flex justify-content-center align-items-center flex-md-column flex-lg-row mt-5 overflow-hidden">
           <div class="col-md-12 col-lg-7 d-flex flex-column gap-5 justify-content-center align-items-center">
-            <h1 class="main-title fs-1 text-center">
+            <h1 class="fs-1 font-main-title text-center">
               Trimite colete online in Romania si in strainatate
             </h1>
-            <div class="button-wrapper d-none d-md-flex justify-content-center align-items-start">
-              <a class="order-button d-block text-decoration-none mb-5 p-2 mb-md-0 me-md-2 " type="button"
-                href="#">Comanda</a>
-              <a class="login-button text-decoration-none mb-5 p-2 mb-md-0 me-md-2" href="#">Intra in Cont</a>
-              <a class="main-sign-up-button d-block fw-bold text-decoration-none mb-5 p-2 mb-md-0 rounded shadow-lg"
+            <div class="d-none d-md-flex justify-content-center align-items-start uppercase">
+              <a class="mb-5 p-2 mb-md-0 me-md-2 text-green text-decoration-none" type="button" href="#">Comanda</a>
+              <a class="mb-5 p-2 mb-md-0 me-md-2 text-custom-white text-decoration-none" href="#">Intra in Cont</a>
+              <a class="mb-5 p-2 mb-md-0 text-custom-white fw-bold text-decoration-none bg-red-light rounded shadow-lg"
                 href="#">Creaza
                 ContGratuit</a>
             </div>
           </div>
-          <div class="main-icon text-center col-5 d-none d-lg-block">
+          <div class="d-none d-lg-block col-5 font-xxxxl text-center text-green">
             <i class="bi bi-truck"></i>
             <!-- <img src="./img/[CITYPNG.COM]Fast Delivery Black box truck Icon Image PNG - 1000x1000.png" 
             alt="delivery car" class="car-img">-->
@@ -103,7 +100,7 @@
               </div>
               <div class="form-floating my-5 shadow-lg">
                 <select id="subject" class="form-select p-2 focus-ring">
-                  <option value="plic" data-mdb-icon='<i class="bi bi-envelope-fill text-danger"></i>'>Plic doar
+                  <option value="plic">Plic doar
                     documente
                   </option>
                   <option value="colet">Colet</option>
@@ -111,58 +108,60 @@
                 </select>
               </div>
               <div class="text-center">
-                <button type="submit" class="btn form-btn p-3 rounded-5 shadow-lg">Calculeaza tariful</button>
+                <button type="submit"
+                  class="btn p-3 text-custom-white uppercase bg-red-light  rounded-5 shadow-lg">Calculeaza
+                  tariful</button>
               </div>
             </form>
           </div>
           <div class="col-6 d-none d-lg-flex justify-content-center align-items-center">
-            <h3 class="main-form-title text-center">
-              Calculeaza tariful <span class="main-form-title-span">Acum</span>
+            <h3 class="font-main-title text-center">
+              Calculeaza tariful <span class="text-red-light">Acum</span>
             </h3>
           </div>
         </div>
       </div>
-      <div class="container partner-wrapper my-5 p-3 p-xl-5 ">
+      <div class="container my-5 p-3 p-xl-5 bg-green  ">
         <div class="row text-center mb-3">
-          <h3 class="col-12 partner-title text-white fw-light">
+          <h3 class="col-12 font-main-title text-white fw-light">
             Parteneri
           </h3>
         </div>
         <div class="row d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center ">
           <div
             class="partner-first-line col-12 col-xl-6  d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 px-0 px-xl-2">
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray rounded shadow-lg">
               <i class="bi bi-bootstrap-fill fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-browser-firefox fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="text-whites partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="text-whites partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-airplane-fill fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="partner-logo-wrapper text-center rounded shadow-lg shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg shadow-lg">
               <i class="bi bi-amazon fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
           </div>
           <div
             class="partner-second-line col-12 col-xl-6 d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 mt-3 mt-xl-0 px-0 px-xl-1">
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-android2 fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-apple fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-behance fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
-            <div class="partner-logo-wrapper text-center rounded shadow-lg">
+            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
               <i class="bi bi-bing fs-1 text-white"></i>
               <p>14.00 RON</p>
             </div>
