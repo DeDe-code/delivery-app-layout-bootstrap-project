@@ -5,13 +5,20 @@ $colors: (
   "green-light": #9eb7b8,
   "green": #007a95,
   "gray": #d4d4ca,
-  "custom-white": #ece6d3,
+  "gray-dark": #4e6c7d,
+  "custom-white": #f8f9fa,
   "black": #000,
+
+  "blue": #390099,
+  "blue-dark": #133b52,
+  "pink": #ff0054,
+  "orange": #ff5400,
+  "yellow": #ffbd00,
 );
 
 // font size
 $base-font-size: 1rem;
 
 // font family
-$bs-font-sans-serif: "Lato", sans-serif;
+$bs-font-sans-serif: "Work Sans Variable", sans-serif;
 $main-title: "Bungee", system-ui;

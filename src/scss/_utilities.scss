@@ -13,11 +13,11 @@ $utilities: (
     "prefix": "font",
     "values": (
       "xxxxl": $base-font-size * 23,
-      // "sm": $font-size-sm,
-      // "md": $base-font-size,
+      "sm": $base-font-size * 2.7,
+      "md": $base-font-size * 4,
       // "lg": $font-size-lg,
       // "xl": $font-size-xl,
-      // "xxl": $font-size-xxl,,,,,,,,,
+      // "xxl": $font-size-xxl,,,,,,,,,,,,,
     ),
   ),
 

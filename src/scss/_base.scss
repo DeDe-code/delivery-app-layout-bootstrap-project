@@ -1,5 +1,24 @@
 /** @format */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $bs-font-sans-serif;
+}
+
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+button {
+  border: none;
+  font-weight: 700;
+}
+
 .uppercase {
   text-transform: uppercase;
 }

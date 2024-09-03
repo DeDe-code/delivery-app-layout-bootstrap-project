@@ -13,7 +13,7 @@
     background-color: $val;
   }
 
-  .border-#{$key}-color {
+  .border-#{$key} {
     border-color: $val;
   }
 }
