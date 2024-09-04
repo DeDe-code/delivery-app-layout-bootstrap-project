@@ -72,7 +72,7 @@
     <div class="container">
       <div class="row d-flex justify-content-center align-items-center flex-md-column flex-lg-row mt-5 overflow-hidden">
         <div class="col-md-12 col-lg-7 d-flex flex-column gap-4 justify-content-center align-items-center">
-          <div class="d-none d-sm-flex justify-content-center align-items-center uppercase">
+          <div class="d-none d-sm-flex d-xl-none justify-content-center align-items-center uppercase">
             <button class="p-2 mb-md-0 me-sm-3 text-custom-white fw-bold bg-transparent border border-2 rounded"
               href=" #">
               Intra in Cont
@@ -92,10 +92,8 @@
     </div>
     <!-- FORM SECTION -->
     <div class=" container position-relative mt-4">
-      <!-- <img src="./img/clipart2123472.png" alt="" class="position-absolute d-none d-lg-block"> -->
       <div class="row d-flex flex-column align-items-center p-3 p-sm-0 bg-blue-dark">
-        <!-- <div class="form-wrapper col-12 d-flex flex-row  rounded-3 border border-2 border-danger"> -->
-        <!-- FORM BUTTONS -->
+        <!-- FORM NAV BUTTONS -->
         <div class="form-nav d-flex col-12 col-lg-6 align-self-lg-start p-0">
           <button id="btn-interior" class="w-100 p-3 bg-custom-white border-0 rounded-top-3">
             Trimite in Romania
@@ -104,7 +102,7 @@
             Trimite in strainatate
           </button>
         </div>
-        <!-- END OF FORM BUTTONS -->
+        <!-- END OF FORM NAV BUTTONS -->
         <!-- FORM INTERIOR -->
         <form class="form-interior col-12 p-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
           <div class="row d-sm-flex">
@@ -123,18 +121,125 @@
               </select>
             </div>
             <div class="form-floating col-12 col-sm-4 mb-3">
-              <select id="package" class="form-select p-1 focus-ring shadow-sm">
+              <select id="package" class="package-detail-select form-select p-1 focus-ring shadow-sm">
                 <option value="plic">Plic doar documente</option>
                 <option value="colet">Colet</option>
                 <option value="palet">Palet</option>
               </select>
             </div>
           </div>
+          <!-- PACKAGE DETAIL FORM -->
+          <div class="row d-none package-detail-form">
+            <h6 class="">Dimensiuni</h6>
+            <div class="d-flex justify-content-center">
+              <div class="form-floating col-6 me-2 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Greutate(kg)">
+                <label for="package-weight">Greutate(kg)</label>
+              </div>
+              <div class="form-floating col-6 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Lungime (cm)">
+                <label for="package-weight">Lungime (cm)</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="form-floating col-6 me-2 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Latime (cm)">
+                <label for="package-weight">Latime (cm)</label>
+              </div>
+              <div class="form-floating col-6 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Inaltime (cm)">
+                <label for="package-weight">Inaltime (cm)</label>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PACKAGE DETAIL FORM -->
           <div class="col-12 col-sm-6 col-md-4 mx-auto">
             <button type="submit" class="w-100 p-3 text-custom-white uppercase bg-orange rounded-3 shadow-lg">
               Calculeaza tariful
             </button>
           </div>
+          <!-- SERVICES CARD -->
+          <div class="row d-flex flex-column flex-lg-row gap-3 mt-5 px-3">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-sm">
+              <div class="service-detail-container d-flex">
+                <div class="col-6  d-flex flex-column">
+                  <div class="company-logo d-flex align-items-start">
+                    <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
+                  </div>
+                  <div class="service-text mt-5 pt-3 font-sx">Standard</div>
+                </div>
+                <div class="col-6">
+                  <div class="real-price-container d-flex justify-content-end">
+                    <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232</div>
+                    <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
+                  </div>
+                  <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">23.45 lei
+                  </div>
+                  <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
+                </div>
+              </div>
+              <div class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
+                <div class="service-container1 d-flex">
+                  <div class="service-icon1 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                  </div>
+                  <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
+                  </div>
+                </div>
+                <div class="arrow-icon-container d-flex justify-content-center align-items-center">
+                  <i class="bi bi-arrow-right fs-3"></i>
+                </div>
+                <div class="service-container2 d-flex">
+                  <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
+                    <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                  </div>
+                  <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-lg">
+              <div class="service-detail-container d-flex">
+                <div class="col-6  d-flex flex-column">
+                  <div class="company-logo d-flex align-items-start">
+                    <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
+                  </div>
+                  <div class="service-text mt-5 pt-3 font-sx">Standard</div>
+                </div>
+                <div class="col-6">
+                  <div class="real-price-container d-flex justify-content-end">
+                    <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232</div>
+                    <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
+                  </div>
+                  <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">23.45 lei
+                  </div>
+                  <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
+                </div>
+              </div>
+              <div class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
+                <div class="service-container1 d-flex">
+                  <div class="service-icon1 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                  </div>
+                  <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
+                  </div>
+                </div>
+                <div class="arrow-icon-container d-flex justify-content-center align-items-center">
+                  <i class="bi bi-arrow-right fs-3"></i>
+                </div>
+                <div class="service-container2 d-flex">
+                  <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
+                    <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                  </div>
+                  <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF SERVICES CARD -->
         </form>
         <!-- END OF FORM INTERIOR -->
         <!-- FORM ABROAD -->
@@ -153,7 +258,7 @@
               </select>
             </div>
             <div class="form-floating col-12 col-sm-4 mb-3">
-              <select id="subject" class="form-select p-1 focus-ring shadow-sm">
+              <select id="package" class="package-detail-select form-select p-1 focus-ring shadow-sm">
                 <option value="plic">Plic doar
                   documente
                 </option>
@@ -162,6 +267,35 @@
               </select>
             </div>
           </div>
+          <!-- PACKAGE DETAIL FORM -->
+          <div class="row d-none package-detail-form">
+            <h6 class="">Dimensiuni</h6>
+            <div class="d-flex justify-content-center">
+              <div class="form-floating col-6 me-2 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Greutate(kg)">
+                <label for="package-weight">Greutate(kg)</label>
+              </div>
+              <div class="form-floating col-6 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Lungime (cm)">
+                <label for="package-weight">Lungime (cm)</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="form-floating col-6 me-2 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Latime (cm)">
+                <label for="package-weight">Latime (cm)</label>
+              </div>
+              <div class="form-floating col-6 mb-3">
+                <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                  placeholder="Inaltime (cm)">
+                <label for="package-weight">Inaltime (cm)</label>
+              </div>
+            </div>
+          </div>
+          <!-- END OF PACKAGE DETAIL FORM -->
           <div class="col-12 col-sm-6 col-md-4 mx-auto">
             <button type="submit" class="w-100 p-3 text-custom-white uppercase bg-orange rounded-3 shadow-lg">
               Calculeaza tariful
@@ -169,13 +303,6 @@
           </div>
         </form>
         <!-- END OF FORM ABROAD -->
-
-        <!-- </div> -->
-        <!-- <div class="col-6 d-none d-lg-flex justify-content-center align-items-center">
-          <h3 class="font-main-title text-center">
-            Calculeaza tariful <span class="text-red-light">Acum</span>
-          </h3>
-        </div> -->
       </div>
     </div>
     <!-- END OF FORM SECTION -->
