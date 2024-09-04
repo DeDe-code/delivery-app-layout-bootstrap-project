@@ -35,7 +35,27 @@ btnAbroad.addEventListener("click", () => {
 });
 
 // SELECT DROPDOWN
-const packageInput = document.querySelector("#package");
-if (packageInput.textContent === "colet" || "palet") {
-  console.log("it will be working");
-}
+const packageInput = [...document.querySelectorAll(".package-detail-select")];
+const packageDetailForm = [
+  ...document.querySelectorAll(".package-detail-form"),
+];
+console.log(packageDetailForm);
+
+packageInput.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    item.value = e.target.value;
+    console.log(item.value);
+
+    if (item.value !== "plic") {
+      packageDetailForm.forEach((item) => {
+        console.log(item);
+
+        item.classList.remove("d-none");
+      });
+    } else {
+      packageDetailForm.forEach((item) => {
+        item.classList.add("d-none");
+      });
+    }
+  });
+});
