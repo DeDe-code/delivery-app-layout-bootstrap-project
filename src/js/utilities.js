@@ -9,29 +9,29 @@ const formInterior = document.querySelector(".form-interior");
 btnInterior.addEventListener("click", () => {
   formInterior.classList.add("d-block");
   formAbroad.classList.add("d-none");
-  btnInterior.classList.add("bg-custom-white");
-  btnAbroad.classList.add("bg-gray-dark");
-  btnAbroad.classList.add("text-custom-white");
+  btnInterior.classList.add("bg-pink-light");
+  btnAbroad.classList.add("bg-custom-white");
+  btnAbroad.classList.add("shadow-lg");
 
   formInterior.classList.remove("d-none");
   formAbroad.classList.remove("d-block");
-  btnInterior.classList.remove("bg-gray-dark");
-  btnInterior.classList.remove("text-custom-white");
-  btnAbroad.classList.remove("bg-custom-white");
+  btnInterior.classList.remove("bg-custom-white");
+  btnInterior.classList.remove("shadow-lg");
+  btnAbroad.classList.remove("bg-pink-light");
 });
 
 btnAbroad.addEventListener("click", () => {
   formAbroad.classList.add("d-block");
   formInterior.classList.add("d-none");
-  btnAbroad.classList.add("bg-custom-white");
-  btnInterior.classList.add("bg-gray-dark");
-  btnInterior.classList.add("text-custom-white");
+  btnAbroad.classList.add("bg-pink-light");
+  btnInterior.classList.add("bg-custom-white");
+  btnInterior.classList.add("shadow-lg");
 
   formAbroad.classList.remove("d-none");
   formInterior.classList.remove("d-block");
-  btnAbroad.classList.remove("bg-gray-dark");
-  btnInterior.classList.remove("bg-custom-white");
-  btnAbroad.classList.remove("text-custom-white");
+  btnAbroad.classList.remove("bg-custom-white");
+  btnInterior.classList.remove("bg-pink-light");
+  btnAbroad.classList.remove("shadow-lg");
 });
 
 // SELECT DROPDOWN
