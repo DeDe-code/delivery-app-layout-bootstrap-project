@@ -9,29 +9,29 @@ const formInterior = document.querySelector(".form-interior");
 btnInterior.addEventListener("click", () => {
   formInterior.classList.add("d-block");
   formAbroad.classList.add("d-none");
-  btnInterior.classList.add("bg-pink-light");
-  btnAbroad.classList.add("bg-custom-white");
-  btnAbroad.classList.add("shadow-lg");
+  btnInterior.classList.add("bg-custom-white");
+  btnAbroad.classList.add("bg-black");
+  btnAbroad.classList.add("text-custom-white");
 
   formInterior.classList.remove("d-none");
   formAbroad.classList.remove("d-block");
-  btnInterior.classList.remove("bg-custom-white");
-  btnInterior.classList.remove("shadow-lg");
-  btnAbroad.classList.remove("bg-pink-light");
+  btnInterior.classList.remove("bg-black");
+  btnInterior.classList.remove("text-custom-white");
+  btnAbroad.classList.remove("bg-custom-white");
 });
 
 btnAbroad.addEventListener("click", () => {
   formAbroad.classList.add("d-block");
   formInterior.classList.add("d-none");
-  btnAbroad.classList.add("bg-pink-light");
-  btnInterior.classList.add("bg-custom-white");
-  btnInterior.classList.add("shadow-lg");
+  btnAbroad.classList.add("bg-custom-white");
+  btnInterior.classList.add("bg-black");
+  btnInterior.classList.add("text-custom-white");
 
   formAbroad.classList.remove("d-none");
   formInterior.classList.remove("d-block");
-  btnAbroad.classList.remove("bg-custom-white");
-  btnInterior.classList.remove("bg-pink-light");
-  btnAbroad.classList.remove("shadow-lg");
+  btnAbroad.classList.remove("bg-black");
+  btnInterior.classList.remove("bg-custom-white");
+  btnAbroad.classList.remove("text-custom-white");
 });
 
 // SELECT DROPDOWN

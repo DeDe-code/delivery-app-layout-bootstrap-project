@@ -7,8 +7,8 @@
   <title>Fido pack</title>
 </head>
 
-<body class="base-font bg-pink-light">
-  <div class="container mx-auto my-5 p-0 bg-custom-white">
+<body class="font-base bg-black-light">
+  <div class="container mx-auto my-5 p-0 bg-bej">
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-5 container-lg">
@@ -23,10 +23,13 @@
             data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
             <i class="bi bi-list fs-4 text-black fw-medium"></i>
           </button>
-          <div class="offcanvas offcanvas-xxl offcanvas-start bg-blue-dark rounded-end-5" tabindex="-1" id="navbarNav"
+          <div class="offcanvas offcanvas-xxl offcanvas-start bg-bej rounded-end-5" tabindex="-1" id="navbarNav"
             aria-labelledby="navbarNavLabel">
             <div class="offcanvas-header d-flex justify-content-between d-lg-none">
-              <h5 class="offcanvas-title text-custom-white uppercase fw-bold" id="navbarNavLabel">Fido pack</h5>
+              <h5 class="offcanvas-title text-custom-white uppercase fw-bold" id="navbarNavLabel">
+                <span class="text-black">Fido</span>
+                <span class="text-red">pack</span>
+              </h5>
               <button type="button" class="bg-transparent border-0 shadow-none fs-3" data-bs-dismiss="offcanvas"
                 aria-label="Close">
                 <i class="bi bi-x-lg text-orange"></i>
@@ -53,16 +56,17 @@
                 </li>
               </ul>
               <div class="d-flex flex-column justify-content-between d-lg-none d-xl-flex flex-xl-row uppercase">
-                <button class="mb-5 p-3 mb-lg-0 me-md-2 p-lg-2 fw-bold bg-custom-white rounded shadow-sm" type="button"
+                <button class="mb-5 p-3 mb-lg-0 me-md-2 p-lg-2 fw-bold bg-transparent border-3 rounded-3" type="button"
                   href="#">
                   Comanda
                 </button>
                 <button
-                  class="mb-5 p-3 mb-lg-0 me-lg-2 p-lg-2 text-black fw-semibold bg-green-sm-light rounded shadow-sm"
+                  class="mb-5 p-3 mb-lg-0 me-lg-2 p-lg-2 text-black fw-bold border-red border-3 bg-transparent rounded shadow-lg"
                   href="#">
                   Intra in Cont
                 </button>
-                <button class="mb-5 p-3 mb-lg-0 p-lg-2 text-custom-white fw-semibold bg-red rounded shadow-sm" href="#">
+                <button class="mb-5 p-3 mb-lg-0 p-lg-2 text-custom-white fw-bold bg-red border-0 rounded shadow-lg"
+                  href="#">
                   Creaza Cont Gratuit
                 </button>
               </div>
@@ -75,16 +79,17 @@
       <div class="container position-relative">
         <div
           class="row d-flex justify-content-center align-items-center flex-md-column flex-lg-row mt-5 overflow-hidden">
-          <div class="col-md-12 col-lg-6 d-flex flex-column gap-4 justify-content-center align-items-center">
+          <div class="col-md-12 col-lg-8 col-xl-6 d-flex flex-column gap-4 justify-content-center align-items-center">
             <div class="d-none d-sm-flex d-xl-none justify-content-center align-items-center uppercase">
-              <button class="p-2 mb-md-0 me-sm-3 text-black fw-bold bg-green-sm-light rounded" href=" #">
+              <button class="p-2 mb-md-0 me-sm-3 text-black fw-bold bg-transparent border-3 border-red rounded"
+                href=" #">
                 Intra in Cont
               </button>
-              <button class="p-2 mb-md-0 text-custom-white fw-bold bg-red rounded shadow-lg" href="#">
+              <button class="p-2 mb-md-0 text-custom-white fw-bold bg-red border-0 rounded shadow-lg" href="#">
                 Creaza Cont Gratuit
               </button>
             </div>
-            <h1 class="font-sm fw-bold uppercase text-black text-left">
+            <h1 class="font-md fw-bold uppercase text-black text-center text-xl-start">
               Trimite colete online in Romania si in <span class="text-red">strainatate</span>
             </h1>
 
@@ -93,16 +98,16 @@
               <div class="row d-flex flex-column align-items-center p-3 p-sm-0 rounded-3 shadow-sm">
                 <!-- FORM NAV BUTTONS -->
                 <div class="form-nav d-flex col-12 align-self-lg-start p-0">
-                  <button id="btn-interior" class="w-100 p-3 bg-pink-light border-0 rounded-top-3">
+                  <button id="btn-interior" class="w-100 p-3 border-0 bg-custom-white rounded-top-3">
                     Trimite in Romania
                   </button>
-                  <button id="btn-abroad" class="w-100 p-3 text-black bg-custom-white rounded-top-3 shadow-lg">
+                  <button id="btn-abroad" class="w-100 p-3 text-custom-white bg-black border-0 rounded-top-3 shadow-lg">
                     Trimite in strainatate
                   </button>
                 </div>
                 <!-- END OF FORM NAV BUTTONS -->
                 <!-- FORM INTERIOR -->
-                <form class="form-interior col-12 p-3 bg-pink-light rounded-bottom-3 rounded-end-lg-3">
+                <form class="form-interior col-12 p-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
                   <div class="row d-sm-flex">
                     <div class="form-floating col-12 col-sm-4 mb-3">
                       <select id="subject" class="form-select p-1 focus-ring shadow-sm">
@@ -156,7 +161,7 @@
                   </div>
                   <!-- END OF PACKAGE DETAIL FORM -->
                   <div class="col-12 col-sm-5 mx-auto">
-                    <button type="submit" class="w-100 p-3 text-custom-white bg-red rounded-3 shadow-lg">
+                    <button type="submit" class="w-100 p-3 text-custom-white bg-red border-0 rounded-3 shadow-lg">
                       Calculeaza tariful
                     </button>
                   </div>
@@ -247,7 +252,7 @@
                 </form>
                 <!-- END OF FORM INTERIOR -->
                 <!-- FORM ABROAD -->
-                <form class="form-abroad d-none col-12 p-3 bg-pink-light rounded-bottom-3 rounded-end-lg-3">
+                <form class="form-abroad d-none col-12 p-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
                   <div class="row d-sm-flex">
                     <div class="form-floating col-12 col-sm-4 mb-3">
                       <select id="subject" disabled class="form-select p-1 focus-ring shadow-sm">
@@ -301,7 +306,7 @@
                   </div>
                   <!-- END OF PACKAGE DETAIL FORM -->
                   <div class="col-12 col-sm-5 mx-auto">
-                    <button type="submit" class="w-100 p-3 text-custom-white bg-red rounded-3 shadow-lg">
+                    <button type="submit" class="w-100 p-3 text-custom-white bg-red border-0 rounded-3 shadow-lg">
                       Calculeaza tariful
                     </button>
                   </div>
@@ -313,60 +318,99 @@
           </div>
           <!-- MAIN IMAGE CONTAINER -->
 
-          <img src="./img/arrow62.png" alt="root arrow" class="root-arrow position-absolute">
 
           <!-- END OF MAIN IMAGE CONTAINER -->
-          <div
-            class="d-none d-lg-flex justify-content-end col-5 position-relative font-xxxxl text-center text-red truck-logo">
-            <i class="bi bi-truck"></i>
+          <div class="d-none d-xl-flex justify-content-end position-relative col-5">
+            <img src="./img/test4.png" alt="delivery car" class="delivery-car w-100 position-absolute">
+
           </div>
         </div>
 
       </div>
 
-      <div class="container my-5 p-3 p-xl-5 bg-green  ">
-        <div class="row text-center mb-3">
-          <h3 class="col-12 font-main-title text-white fw-light">
+      <div class="container my-5 p-3 p-xl-5  ">
+        <!-- <div class="row text-center mb-3">
+          <h3 class="col-12 text-black fw-bold">
             Parteneri
           </h3>
-        </div>
+        </div> -->
         <div class="row d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center ">
           <div
             class="partner-first-line col-12 col-xl-6  d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 px-0 px-xl-2">
-            <div class="partner-logo-wrapper text-center bg-gray rounded shadow-lg">
-              <i class="bi bi-bootstrap-fill fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/fancourier.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-browser-firefox fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/gls.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="text-whites partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-airplane-fill fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/fedex.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg shadow-lg">
-              <i class="bi bi-amazon fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/fedex.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
           </div>
           <div
             class="partner-second-line col-12 col-xl-6 d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 mt-3 mt-xl-0 px-0 px-xl-1">
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-android2 fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/fancourier.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-apple fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/gls.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-behance fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/gls.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
-            <div class="partner-logo-wrapper text-center bg-gray  p-4rounded shadow-lg">
-              <i class="bi bi-bing fs-1 text-white"></i>
-              <p>14.00 RON</p>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./img/gls.png" alt="fancourier" class="w-50">
+              </div>
+              <div class="d-flex justify-content-center pt-2">
+                <p class="text-black fw-medium">14.00 RON</p>
+              </div>
             </div>
           </div>
         </div>
@@ -374,7 +418,8 @@
     </main>
     <footer>
       <div class="container">
-        <div class="row d-flex flex-column align-items-center flex-lg-row align-items-lg-start pb-5">
+        <div
+          class="row d-flex flex-column align-items-center flex-lg-row align-items-lg-start py-5 bg-black text-custom-white">
           <div class="col-12 text-center col-lg-4">
             <a class="navbar-brand fs-4" href="#">Delivery.App</a>
             <p>
