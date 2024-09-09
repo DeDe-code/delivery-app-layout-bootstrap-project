@@ -8,6 +8,7 @@
 
 body {
   font-family: $bs-font-sans-serif;
+  background-color: $base-body-bg;
 }
 
 a {
@@ -16,7 +17,6 @@ a {
 }
 
 button {
-  // border: none;
   font-weight: 700;
 }
 
@@ -35,7 +35,56 @@ button {
   text-transform: capitalize;
 }
 
-.delivery-car {
-  left: 2rem;
-  top: -9rem;
+// test CSS
+
+:root {
+  --bs-danger-text-emphasis: #e85748;
+  --bs-focus-ring-color: #007a95;
+}
+
+.partner-logo-wrapper {
+  width: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .button-wrapper a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+
+  .button-wrapper a:hover {
+    margin-left: 1rem;
+  }
+}
+
+.form-control,
+.form-select {
+  background-color: #f8f5f1;
+}
+
+@media screen and (min-width: 992px) {
+  img {
+    width: 20rem;
+    top: -7rem;
+    left: 25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img {
+    width: 20rem;
+    top: -7rem;
+    left: 29rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  img {
+    width: 20rem;
+    top: -8rem;
+    left: 33rem;
+  }
 }

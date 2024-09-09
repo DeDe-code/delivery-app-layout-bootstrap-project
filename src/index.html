@@ -7,446 +7,400 @@
   <title>Fido pack</title>
 </head>
 
-<body class="font-base bg-black-light">
-  <div class="container mx-auto my-5 p-0 bg-bej">
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-5 container-lg">
-          <a class="navbar-brand text-red fw-bold d-flex" href="#">
-            <i class="bi bi-truck font-sm"></i>
-            <div class="position-relative">
-              <span class="logo-text-first position-absolute text-black fw-bold fst-italic">fido</span>
-              <span class="logo-text-second position-absolute fw-bold fst-italic">pack</span>
-            </div>
-          </a>
-          <button class="navbar-toggler border border-2 border-black shadow-none" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
-            <i class="bi bi-list fs-4 text-black fw-medium"></i>
-          </button>
-          <div class="offcanvas offcanvas-xxl offcanvas-start bg-bej rounded-end-5" tabindex="-1" id="navbarNav"
-            aria-labelledby="navbarNavLabel">
-            <div class="offcanvas-header d-flex justify-content-between d-lg-none">
-              <h5 class="offcanvas-title text-custom-white uppercase fw-bold" id="navbarNavLabel">
-                <span class="text-black">Fido</span>
-                <span class="text-red">pack</span>
-              </h5>
-              <button type="button" class="bg-transparent border-0 shadow-none fs-3" data-bs-dismiss="offcanvas"
-                aria-label="Close">
-                <i class="bi bi-x-lg text-orange"></i>
-              </button>
-            </div>
-            <div class="offcanvas-body d-flex flex-column justify-content-lg-between flex-xl-row ms-xl-5">
-              <ul class=" navbar-nav align-self-lg-end align-self-xl-start">
-                <li class="nav-item dropdown mt-2 mb-4 my-lg-0">
-                  <a class="nav-link dropdown-toggle text-black fw-medium text-hover-custom-white" href="#"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Servicii
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mb-5 mb-lg-0">
-                  <a class="nav-link text-black fw-medium text-hover-custom-white" href=" #">UrmaresteAWB</a>
-                </li>
-                <li class="nav-item mb-5 mb-lg-0">
-                  <a class="nav-link text-black fw-medium text-hover-custom-white" href="#">DeliveryPRO</a>
-                </li>
-              </ul>
-              <div class="d-flex flex-column justify-content-between d-lg-none d-xl-flex flex-xl-row uppercase">
-                <button class="mb-5 p-3 mb-lg-0 me-md-2 p-lg-2 fw-bold bg-transparent border-3 rounded-3" type="button"
-                  href="#">
-                  Comanda
-                </button>
-                <button
-                  class="mb-5 p-3 mb-lg-0 me-lg-2 p-lg-2 text-black fw-bold border-red border-3 bg-transparent rounded shadow-lg"
-                  href="#">
-                  Intra in Cont
-                </button>
-                <button class="mb-5 p-3 mb-lg-0 p-lg-2 text-custom-white fw-bold bg-red border-0 rounded shadow-lg"
-                  href="#">
-                  Creaza Cont Gratuit
-                </button>
-              </div>
-            </div>
+<body>
+  <!-- <div class="container mx-auto my-5 py-4 px-4 bg-bej"> -->
+  <header class="bg-bej">
+    <nav class="navbar navbar-expand-lg pt-3">
+      <div class="container-fluid container-lg p-0">
+        <a class="navbar-brand d-flex text-red fw-bold" href="#">
+          <i class="bi bi-truck font-sm"></i>
+          <div class="position-relative">
+            <span class="logo-text-first position-absolute text-black fw-bold fst-italic">fido</span>
+            <span class="logo-text-second position-absolute fw-bold fst-italic">pack</span>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container position-relative">
-        <div
-          class="row d-flex justify-content-center align-items-center flex-md-column flex-lg-row mt-5 overflow-hidden">
-          <div class="col-md-12 col-lg-8 col-xl-6 d-flex flex-column gap-4 justify-content-center align-items-center">
-            <div class="d-none d-sm-flex d-xl-none justify-content-center align-items-center uppercase">
-              <button class="p-2 mb-md-0 me-sm-3 text-black fw-bold bg-transparent border-3 border-red rounded"
-                href=" #">
+        </a>
+        <button class="navbar-toggler border border-3 border-black shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarNav" aria-controls="navbarNav">
+          <i class="bi bi-list fs-4 text-black fw-bold"></i>
+        </button>
+        <div class="offcanvas offcanvas-xxl offcanvas-start bg-bej rounded-end-5" tabindex="-1" id="navbarNav"
+          aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header d-flex justify-content-between d-lg-none">
+            <h5 class="offcanvas-title text-custom-white uppercase fw-bold" id="navbarNavLabel">
+              <span class="text-black">Fido</span>
+              <span class="text-red">pack</span>
+            </h5>
+            <button type="button" class="bg-transparent border-0 shadow-none fs-3" data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <i class="bi bi-x-lg text-red fw-bold"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-lg-between flex-xl-row ms-xl-5">
+            <ul class=" navbar-nav align-self-lg-end align-self-xl-start">
+              <li class="nav-item dropdown mt-2 mb-4 my-lg-0 ms-xl-3">
+                <a class="nav-link dropdown-toggle text-black fw-medium" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicii
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-4 mb-lg-0">
+                <a class="nav-link text-black fw-medium text-hover-custom-white" href=" #">Urmareste AWB</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column justify-content-between d-lg-none d-xl-flex flex-xl-row">
+              <button class="mb-5 p-3 mb-lg-0 me-md-2 p-lg-2 fw-bold bg-transparent border-3 rounded-3" type="button"
+                href="#">
+                Comanda
+              </button>
+              <button
+                class="mb-5 p-3 mb-lg-0 me-lg-2 p-lg-2 text-black fw-bold border-red border-3 bg-transparent rounded shadow-lg"
+                href="#">
                 Intra in Cont
               </button>
-              <button class="p-2 mb-md-0 text-custom-white fw-bold bg-red border-0 rounded shadow-lg" href="#">
+              <button class="mb-5 p-3 mb-lg-0 p-lg-2 text-custom-white fw-bold bg-red border-0 rounded shadow-lg"
+                href="#">
                 Creaza Cont Gratuit
               </button>
             </div>
-            <h1 class="font-md fw-bold uppercase text-black text-center text-xl-start">
-              Trimite colete online in Romania si in <span class="text-red">strainatate</span>
-            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-bej pt-5">
+    <div class=" container position-relative">
+      <div class="row d-flex flex-column justify-content-center flex-lg-row justify-content-xl-between overflow-hidden">
+        <div class="col-md-12 col-lg-8 col-xl-6 d-flex flex-column justify-content-center align-items-center p-0">
+          <div class="d-none d-sm-flex d-xl-none justify-content-center align-items-center">
+            <button class="p-2 mb-md-0 me-sm-3 text-black fw-bold bg-transparent border-3 border-red rounded" href=" #">
+              Intra in Cont
+            </button>
+            <button class="p-2 mb-md-0 text-custom-white fw-bold bg-red border-0 rounded shadow-lg" href="#">
+              Creaza Cont Gratuit
+            </button>
+          </div>
+          <h1 class="mt-2 mt-xl-0 font-md fw-bold uppercase text-black text-center text-xl-start">
+            Trimite colete online in Romania si in <span class="text-red">strainatate</span>
+          </h1>
 
-            <!-- FORM SECTION -->
-            <div class=" container position-relative mt-4">
-              <div class="row d-flex flex-column align-items-center p-3 p-sm-0 rounded-3 shadow-sm">
-                <!-- FORM NAV BUTTONS -->
-                <div class="form-nav d-flex col-12 align-self-lg-start p-0">
-                  <button id="btn-interior" class="w-100 p-3 border-0 bg-custom-white rounded-top-3">
-                    Trimite in Romania
-                  </button>
-                  <button id="btn-abroad" class="w-100 p-3 text-custom-white bg-black border-0 rounded-top-3 shadow-lg">
-                    Trimite in strainatate
+          <!-- FORM SECTION -->
+          <div class=" container position-relative mt-4 px-3">
+            <div class="row d-flex flex-column align-items-center rounded-3 shadow-sm">
+              <!-- FORM NAV BUTTONS -->
+              <div class="d-flex col-12 align-self-lg-start p-0">
+                <button id="btn-interior" class="w-100 p-3 border-0 bg-custom-white rounded-top-3">
+                  Trimite in Romania
+                </button>
+                <button id="btn-abroad" class="w-100 p-3 text-custom-white bg-black border-0 rounded-top-3 shadow-lg">
+                  Trimite in strainatate
+                </button>
+              </div>
+              <!-- END OF FORM NAV BUTTONS -->
+              <!-- FORM-->
+              <form class="col-12 py-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
+                <!-- FORM INTERIOR-->
+                <div class="form-interior row justify-content-center">
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="subject" class="form-select p-custom-3 py-0 focus-ring shadow-sm">
+                      <option>Din:</option>
+                      <option value="brasov">Brasov</option>
+                      <option value="sfantugheorhe">SfantuGheorghe</option>
+                    </select>
+                  </div>
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="subject" class="form-select p-custom-3 py-0  focus-ring shadow-sm">
+                      <option>Pana:</option>
+                      <option value="brasov">Brasov</option>
+                      <option value="sfantugheorhe">SfantuGheorghe</option>
+                    </select>
+                  </div>
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="package"
+                      class="package-detail-select form-select p-custom-3 py-0  focus-ring shadow-sm">
+                      <option>Ce trimiti?</option>
+                      <option value="plic">Plic doar documente</option>
+                      <option value="colet">Colet</option>
+                      <option value="palet">Palet</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- END OF FORM INTERIOR -->
+                <!-- FROM ABROAD -->
+                <div class="form-abroad d-none row justify-content-center">
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="subject" disabled class="form-select p-custom-3 py-0 focus-ring shadow-sm">
+                      <option>Romania</option>
+                    </select>
+                  </div>
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="subject" class="form-select p-custom-3 py-0  focus-ring shadow-sm">
+                      <option>Tara destinatar</option>
+                      <option value="germany">Germany</option>
+                      <option value="england">England</option>
+                    </select>
+                  </div>
+                  <div class="form-floating col-12 col-sm-4 mb-3">
+                    <select id="package"
+                      class="package-detail-select form-select p-custom-3 py-0  focus-ring shadow-sm">
+                      <option>Ce trimiti?</option>
+                      <option value="plic">Plic doar documente</option>
+                      <option value="colet">Colet</option>
+                      <option value="palet">Palet</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- END OF FORM ABROAD-->
+                <!-- PACKAGE DETAIL FORM -->
+                <div class="row d-none m-0 p-0 package-detail-form ">
+                  <h6 class="p-0">Dimensiuni</h6>
+                  <div class="d-flex justify-content-center px-1">
+                    <div class="form-floating col-6 d-flex justify-content-center me-2">
+                      <input type=" text" id="package-weight" class="form-control focus-ring shadow-sm" placeholder="">
+                      <label for=" package-weight">Greutate(kg)</label>
+                    </div>
+                    <div class=" form-floating col-6 mb-3">
+                      <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                        placeholder="Lungime (cm)">
+                      <label for="package-weight">Lungime (cm)</label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center px-1">
+                    <div class="form-floating col-6 me-2 mb-3">
+                      <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                        placeholder="Latime (cm)">
+                      <label for="package-weight">Latime (cm)</label>
+                    </div>
+                    <div class="form-floating col-6 mb-3">
+                      <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
+                        placeholder="Inaltime (cm)">
+                      <label for="package-weight">Inaltime (cm)</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- END OF PACKAGE DETAIL FORM -->
+                <!-- FORM BTN -->
+                <div class="col-12 col-sm-5 mx-auto">
+                  <button type="submit" class="w-100 p-3 text-custom-white bg-red border-0 rounded-3 shadow-lg">
+                    Calculeaza tariful
                   </button>
                 </div>
-                <!-- END OF FORM NAV BUTTONS -->
-                <!-- FORM INTERIOR -->
-                <form class="form-interior col-12 p-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
-                  <div class="row d-sm-flex">
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="subject" class="form-select p-1 focus-ring shadow-sm">
-                        <option>Din:</option>
-                        <option value="brasov">Brasov</option>
-                        <option value="sfantugheorhe">SfantuGheorghe</option>
-                      </select>
-                    </div>
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="subject" class="form-select p-1 focus-ring shadow-sm">
-                        <option>Pana:</option>
-                        <option value="brasov">Brasov</option>
-                        <option value="sfantugheorhe">SfantuGheorghe</option>
-                      </select>
-                    </div>
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="package" class="package-detail-select form-select p-1 focus-ring shadow-sm">
-                        <option value="plic">Plic doar documente</option>
-                        <option value="colet">Colet</option>
-                        <option value="palet">Palet</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- PACKAGE DETAIL FORM -->
-                  <div class="row d-none package-detail-form">
-                    <h6 class="">Dimensiuni</h6>
-                    <div class="d-flex justify-content-center">
-                      <div class="form-floating col-6 me-2 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Greutate(kg)">
-                        <label for="package-weight">Greutate(kg)</label>
+                <!-- END FORM BTN -->
+                <!-- SERVICES CARD -->
+                <div class="row d-flex flex-column flex-lg-row gap-3 mt-5 px-3 d-none">
+                  <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-sm">
+                    <div class="service-detail-container d-flex">
+                      <div class="col-6  d-flex flex-column">
+                        <div class="company-logo d-flex align-items-start">
+                          <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
+                        </div>
+                        <div class="service-text mt-5 pt-3 font-sx">Standard</div>
                       </div>
-                      <div class="form-floating col-6 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Lungime (cm)">
-                        <label for="package-weight">Lungime (cm)</label>
+                      <div class="col-6">
+                        <div class="real-price-container d-flex justify-content-end">
+                          <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232
+                          </div>
+                          <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
+                        </div>
+                        <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">
+                          23.45 lei
+                        </div>
+                        <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                      <div class="form-floating col-6 me-2 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Latime (cm)">
-                        <label for="package-weight">Latime (cm)</label>
+                    <div
+                      class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
+                      <div class="service-container1 d-flex">
+                        <div class="service-icon1 d-flex justify-content-center align-items-center">
+                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                        </div>
+                        <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
+                        </div>
                       </div>
-                      <div class="form-floating col-6 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Inaltime (cm)">
-                        <label for="package-weight">Inaltime (cm)</label>
+                      <div class="arrow-icon-container d-flex justify-content-center align-items-center">
+                        <i class="bi bi-arrow-right fs-3"></i>
+                      </div>
+                      <div class="service-container2 d-flex">
+                        <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
+                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                        </div>
+                        <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
                       </div>
                     </div>
                   </div>
-                  <!-- END OF PACKAGE DETAIL FORM -->
-                  <div class="col-12 col-sm-5 mx-auto">
-                    <button type="submit" class="w-100 p-3 text-custom-white bg-red border-0 rounded-3 shadow-lg">
-                      Calculeaza tariful
-                    </button>
-                  </div>
-                  <!-- SERVICES CARD -->
-                  <div class="row d-flex flex-column flex-lg-row gap-3 mt-5 px-3 d-none">
-                    <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-sm">
-                      <div class="service-detail-container d-flex">
-                        <div class="col-6  d-flex flex-column">
-                          <div class="company-logo d-flex align-items-start">
-                            <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
-                          </div>
-                          <div class="service-text mt-5 pt-3 font-sx">Standard</div>
+                  <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-lg">
+                    <div class="service-detail-container d-flex">
+                      <div class="col-6  d-flex flex-column">
+                        <div class="company-logo d-flex align-items-start">
+                          <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
                         </div>
-                        <div class="col-6">
-                          <div class="real-price-container d-flex justify-content-end">
-                            <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232
-                            </div>
-                            <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
-                          </div>
-                          <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">
-                            23.45 lei
-                          </div>
-                          <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
-                        </div>
+                        <div class="service-text mt-5 pt-3 font-sx">Standard</div>
                       </div>
-                      <div
-                        class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
-                        <div class="service-container1 d-flex">
-                          <div class="service-icon1 d-flex justify-content-center align-items-center">
-                            <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
+                      <div class="col-6">
+                        <div class="real-price-container d-flex justify-content-end">
+                          <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232
                           </div>
-                          <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
-                          </div>
+                          <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
                         </div>
-                        <div class="arrow-icon-container d-flex justify-content-center align-items-center">
-                          <i class="bi bi-arrow-right fs-3"></i>
+                        <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">
+                          23.45 lei
                         </div>
-                        <div class="service-container2 d-flex">
-                          <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
-                            <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
-                          </div>
-                          <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
-                        </div>
+                        <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-lg">
-                      <div class="service-detail-container d-flex">
-                        <div class="col-6  d-flex flex-column">
-                          <div class="company-logo d-flex align-items-start">
-                            <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
-                          </div>
-                          <div class="service-text mt-5 pt-3 font-sx">Standard</div>
+                    <div
+                      class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
+                      <div class="service-container1 d-flex">
+                        <div class="service-icon1 d-flex justify-content-center align-items-center">
+                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
                         </div>
-                        <div class="col-6">
-                          <div class="real-price-container d-flex justify-content-end">
-                            <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232
-                            </div>
-                            <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
-                          </div>
-                          <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">
-                            23.45 lei
-                          </div>
-                          <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
+                        <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
                         </div>
                       </div>
-                      <div
-                        class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
-                        <div class="service-container1 d-flex">
-                          <div class="service-icon1 d-flex justify-content-center align-items-center">
-                            <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
-                          </div>
-                          <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
-                          </div>
+                      <div class="arrow-icon-container d-flex justify-content-center align-items-center">
+                        <i class="bi bi-arrow-right fs-3"></i>
+                      </div>
+                      <div class="service-container2 d-flex">
+                        <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
+                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
                         </div>
-                        <div class="arrow-icon-container d-flex justify-content-center align-items-center">
-                          <i class="bi bi-arrow-right fs-3"></i>
-                        </div>
-                        <div class="service-container2 d-flex">
-                          <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
-                            <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
-                          </div>
-                          <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
-                        </div>
+                        <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
                       </div>
                     </div>
                   </div>
-                  <!-- END OF SERVICES CARD -->
-                </form>
-                <!-- END OF FORM INTERIOR -->
-                <!-- FORM ABROAD -->
-                <form class="form-abroad d-none col-12 p-3 bg-custom-white rounded-bottom-3 rounded-end-lg-3">
-                  <div class="row d-sm-flex">
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="subject" disabled class="form-select p-1 focus-ring shadow-sm">
-                        <option value="romania">Romania</option>
-                      </select>
-                    </div>
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="subject" class="form-select p-1 focus-ring shadow-sm">
-                        <option value="germany">Germany</option>
-                        <option value="england">England</option>
-                        <option value="spain">Spain</option>
-                      </select>
-                    </div>
-                    <div class="form-floating col-12 col-sm-4 mb-3">
-                      <select id="package" class="package-detail-select form-select p-1 focus-ring shadow-sm">
-                        <option value="plic">Plic doar
-                          documente
-                        </option>
-                        <option value="colet">Colet</option>
-                        <option value="palet">Palet</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- PACKAGE DETAIL FORM -->
-                  <div class="row d-none package-detail-form">
-                    <h6 class="">Dimensiuni</h6>
-                    <div class="d-flex justify-content-center">
-                      <div class="form-floating col-6 me-2 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Greutate(kg)">
-                        <label for="package-weight">Greutate(kg)</label>
-                      </div>
-                      <div class="form-floating col-6 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Lungime (cm)">
-                        <label for="package-weight">Lungime (cm)</label>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <div class="form-floating col-6 me-2 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Latime (cm)">
-                        <label for="package-weight">Latime (cm)</label>
-                      </div>
-                      <div class="form-floating col-6 mb-3">
-                        <input type="text" id="package-weight" class="form-control focus-ring shadow-sm"
-                          placeholder="Inaltime (cm)">
-                        <label for="package-weight">Inaltime (cm)</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END OF PACKAGE DETAIL FORM -->
-                  <div class="col-12 col-sm-5 mx-auto">
-                    <button type="submit" class="w-100 p-3 text-custom-white bg-red border-0 rounded-3 shadow-lg">
-                      Calculeaza tariful
-                    </button>
-                  </div>
-                </form>
-                <!-- END OF FORM ABROAD -->
-              </div>
+                </div>
+                <!-- END OF SERVICES CARD -->
+              </form>
             </div>
-            <!-- END OF FORM SECTION -->
           </div>
-          <!-- MAIN IMAGE CONTAINER -->
-
-
-          <!-- END OF MAIN IMAGE CONTAINER -->
-          <div class="d-none d-xl-flex justify-content-end position-relative col-5">
-            <img src="./img/test4.png" alt="delivery car" class="delivery-car w-100 position-absolute">
-
-          </div>
+          <!-- END OF FORM SECTION -->
         </div>
-
+        <!-- MAIN IMAGE CONTAINER -->
+        <div class="d-none d-xl-flex justify-content-start align-items-end position-relative col-5">
+          <img src="./img/fidopackcar.jpg" alt="delivery car" class="delivery-car w-100">
+        </div>
+        <!-- END OF MAIN IMAGE CONTAINER -->
       </div>
-
-      <div class="container my-5 p-3 p-xl-5  ">
-        <!-- <div class="row text-center mb-3">
-          <h3 class="col-12 text-black fw-bold">
-            Parteneri
-          </h3>
-        </div> -->
-        <div class="row d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center ">
+    </div>
+    <!-- PARTNERS SECTION -->
+    <div class="container mt-5 pb-5  ">
+      <div class="row d-flex flex-column flex-xl-row border border-2">
+        <div class="partner-first-line col-12 col-xl-6 d-flex justify-content-center gap-5 gap-lg-5 px-0 ">
           <div
-            class="partner-first-line col-12 col-xl-6  d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 px-0 px-xl-2">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/fancourier.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+            class="d-flex flex-column align-items-center justify-content-center bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/fancourier.png" alt="fancourier" class="w-50">
             </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/gls.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
-            </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/fedex.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
-            </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/fedex.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
             </div>
           </div>
           <div
-            class="partner-second-line col-12 col-xl-6 d-flex justify-content-center gap-2 gap-lg-5 gap-xl-3 gap-xxl-5 mt-3 mt-xl-0 px-0 px-xl-1">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/fancourier.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/gls.png" alt="fancourier" class="w-50">
             </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/gls.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
             </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/gls.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/fedex.png" alt="fancourier" class="w-50">
             </div>
-            <div
-              class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./img/gls.png" alt="fancourier" class="w-50">
-              </div>
-              <div class="d-flex justify-content-center pt-2">
-                <p class="text-black fw-medium">14.00 RON</p>
-              </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/fedex.png" alt="fancourier" class="w-50">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
+            </div>
+          </div>
+        </div>
+        <div class="partner-second-line col-12 col-xl-6 d-flex justify-content-center gap-5 mt-3 mt-xl-0 px-0">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/fancourier.png" alt="fancourier" class="w-50">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/gls.png" alt="fancourier" class="w-50">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/gls.png" alt="fancourier" class="w-50">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column align-items-center justify-content-center  bg-custom-white rounded shadow-lg partner-logo-wrapper pt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <img src="./img/gls.png" alt="fancourier" class="w-50">
+            </div>
+            <div class="d-flex justify-content-center pt-2">
+              <p class="text-black fw-medium">14.00 RON</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div
-          class="row d-flex flex-column align-items-center flex-lg-row align-items-lg-start py-5 bg-black text-custom-white">
-          <div class="col-12 text-center col-lg-4">
-            <a class="navbar-brand fs-4" href="#">Delivery.App</a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro, facilis, ex ut iusto facere
-              eligendi, provident dolore esse quidem culpa. Reprehenderit voluptatibus ea earum ratione laborum autem
-              qui esse!
-            </p>
+    </div>
+    <!-- END OF PARTNERS SECTION -->
+  </main>
+  <!-- END OF MAIN SECTION -->
+  <!-- FOOTER -->
+  <footer class="bg-black">
+    <div class="container">
+      <div class="row d-flex flex-column align-items-center justify-content-center flex-lg-row py-5 text-custom-white">
+        <div class="col-12 text-center col-lg-4">
+          <a class="navbar-brand fs-4" href="#">Delivery.App</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro, facilis, ex ut iusto facere
+            eligendi, provident dolore esse quidem culpa. Reprehenderit voluptatibus ea earum ratione laborum autem
+            qui esse!
+          </p>
+        </div>
+        <div class="col-12 text-center mt-5 col-lg-4 mt-lg-0">
+          <h4 class="fw-semibold">Hai in comunitatea <span>delivery.app</span></h4>
+          <div class="social-icons-wrapper">
+            <i class="bi bi-facebook me-2 fs-3 text-white"></i>
+            <i class="bi bi-instagram me-2 fs-3 text-white"></i>
+            <i class="bi bi-linkedin fs-3 text-white"></i>
           </div>
-          <div class="col-12 text-center mt-5 col-lg-4 mt-lg-0">
-            <h4 class="fw-semibold">Hai in comunitatea <span>delivery.app</span></h4>
-            <div class="social-icons-wrapper">
-              <i class="bi bi-facebook me-2 fs-3 text-white"></i>
-              <i class="bi bi-instagram me-2 fs-3 text-white"></i>
-              <i class="bi bi-linkedin fs-3 text-white"></i>
-            </div>
-          </div>
-          <div class="col-12 d-flex flex-column text-center mt-5 col-lg-4 mt-lg-0">
-            <h4 class="fw-semibold">Contact</h4>
-            <a class="text-decoration-none text-custom-white" href="#"><span class="me-3">
-                <i class="bi bi-envelope-open-fill"></i></span>send@email.com</a>
-            <a class="text-decoration-none text-custom-white" href="#"><span class="me-3">
-                <i class="bi bi-telephone-inbound-fill"></i></span>0371222333</a>
-          </div>
-
+        </div>
+        <div class="col-12 d-flex flex-column text-center mt-5 col-lg-4 mt-lg-0">
+          <h4 class="fw-semibold">Contact</h4>
+          <a class="text-decoration-none text-custom-white" href="#"><span class="me-3">
+              <i class="bi bi-envelope-open-fill"></i></span>send@email.com</a>
+          <a class="text-decoration-none text-custom-white" href="#"><span class="me-3">
+              <i class="bi bi-telephone-inbound-fill"></i></span>0371222333</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
   </div>
   <script type="module" src="./js/main.js"></script>
 </body>

@@ -7,7 +7,7 @@ const formAbroad = document.querySelector(".form-abroad");
 const formInterior = document.querySelector(".form-interior");
 
 btnInterior.addEventListener("click", () => {
-  formInterior.classList.add("d-block");
+  formInterior.classList.add("d-flex");
   formAbroad.classList.add("d-none");
   btnInterior.classList.add("bg-custom-white");
   btnAbroad.classList.add("bg-black");
@@ -21,7 +21,7 @@ btnInterior.addEventListener("click", () => {
 });
 
 btnAbroad.addEventListener("click", () => {
-  formAbroad.classList.add("d-block");
+  formAbroad.classList.add("d-flex");
   formInterior.classList.add("d-none");
   btnAbroad.classList.add("bg-custom-white");
   btnInterior.classList.add("bg-black");
