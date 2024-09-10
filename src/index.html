@@ -102,27 +102,29 @@
               </div>
               <!-- END OF FORM NAV BUTTONS -->
               <!-- FORM-->
-              <form class="col-12 py-3 bg-drap rounded-bottom-3 rounded-end-lg-3 font-smx">
+              <form class="col-12 py-4 bg-drap rounded-bottom-3 rounded-end-lg-3 font-smx">
                 <!-- FORM INTERIOR-->
                 <div class="form-interior row justify-content-center">
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Din</p>
                     <select id="subject" class="form-select p-custom-3 py-0 font-smx font-smx focus-ring shadow-sm">
-                      <option>Din:</option>
+                      <option>Ex: Bucuresti</option>
                       <option value="brasov">Brasov</option>
                       <option value="sfantugheorhe">SfantuGheorghe</option>
                     </select>
                   </div>
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Pana</p>
                     <select id="subject" class="form-select p-custom-3 py-0 font-smx font-smx focus-ring shadow-sm">
-                      <option>Pana:</option>
+                      <option>Ex: Brasov</option>
                       <option value="brasov">Brasov</option>
                       <option value="sfantugheorhe">SfantuGheorghe</option>
                     </select>
                   </div>
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Ce trimiti?</p>
                     <select id="package"
                       class="package-detail-select form-select p-custom-3 py-0 font-smx font-smx focus-ring shadow-sm">
-                      <option>Ce trimiti?</option>
                       <option value="plic">Plic doar documente</option>
                       <option value="colet">Colet</option>
                       <option value="palet">Palet</option>
@@ -133,21 +135,23 @@
                 <!-- FROM ABROAD -->
                 <div class="form-abroad d-none row justify-content-center">
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Tara expeditor</p>
                     <select id="subject" disabled class="form-select p-custom-3 py-0 font-smx focus-ring shadow-sm">
                       <option>Romania</option>
                     </select>
                   </div>
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Tara destinatar</p>
                     <select id="subject" class="form-select p-custom-3 py-0 font-smx  focus-ring shadow-sm">
-                      <option>Tara destinatar</option>
+                      <option>Ex: Germany</option>
                       <option value="germany">Germany</option>
                       <option value="england">England</option>
                     </select>
                   </div>
                   <div class="form-floating col-12 col-sm-4 mb-3">
+                    <p class="fw-medium">Ce trimiti?</p>
                     <select id="package"
                       class="package-detail-select form-select p-custom-3 py-0 font-smx  focus-ring shadow-sm">
-                      <option>Ce trimiti?</option>
                       <option value="plic">Plic doar documente</option>
                       <option value="colet">Colet</option>
                       <option value="palet">Palet</option>
@@ -157,7 +161,7 @@
                 <!-- END OF FORM ABROAD-->
                 <!-- PACKAGE DETAIL FORM -->
                 <div class="row d-none m-0 p-0 package-detail-form ">
-                  <h6 class="p-0">Dimensiuni</h6>
+                  <h6 class="p-0 font-smx fw-medium">Dimensiuni</h6>
                   <div class="d-flex justify-content-center px-1">
                     <div class="form-floating col-6 d-flex justify-content-center me-2">
                       <input type=" text" id="package-weight" class="form-control font-smx focus-ring shadow-sm"
@@ -192,48 +196,8 @@
                 </div>
                 <!-- END FORM BTN -->
                 <!-- SERVICES CARD -->
-                <div class="row d-flex flex-column flex-lg-row gap-3 mt-5 px-3 d-none">
-                  <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-sm">
-                    <div class="service-detail-container d-flex">
-                      <div class="col-6  d-flex flex-column">
-                        <div class="company-logo d-flex align-items-start">
-                          <img src="./img/gls.png" alt="GLS" class="w-50 w-lg-25">
-                        </div>
-                        <div class="service-text mt-5 pt-3 font-sx">Standard</div>
-                      </div>
-                      <div class="col-6">
-                        <div class="real-price-container d-flex justify-content-end">
-                          <div class="real-price me-2 p-1 text-gray-dark fw-medium text-decoration-line-through">1232
-                          </div>
-                          <div class="promotion p-1 text-custom-white bg-orange rounded-3">-34%</div>
-                        </div>
-                        <div class="payable-amount d-flex justify-content-end mt-2 fs-4 text-blue-dark fw-semibold">
-                          23.45 lei
-                        </div>
-                        <div class="pay-info d-flex justify-content-end mt-2 text-gray-dark">fara TVA</div>
-                      </div>
-                    </div>
-                    <div
-                      class="service-type d-flex justify-content-center mt-4 bg-gray-light border border-2 rounded-3">
-                      <div class="service-container1 d-flex">
-                        <div class="service-icon1 d-flex justify-content-center align-items-center">
-                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
-                        </div>
-                        <div class="service-text1 d-flex justify-content-center align-items-center p-2">adresa
-                        </div>
-                      </div>
-                      <div class="arrow-icon-container d-flex justify-content-center align-items-center">
-                        <i class="bi bi-arrow-right fs-3"></i>
-                      </div>
-                      <div class="service-container2 d-flex">
-                        <div class="service-icon2 d-flex justify-content-center align-items-center ps-2">
-                          <i class="bi bi-house-door-fill fs-3 text-orange-light"></i>
-                        </div>
-                        <div class="service-text2 d-flex justify-content-center align-items-center p-2">adresa</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-4 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-lg">
+                <div class="row d-flex flex-column flex-lg-row gap-3 mt-5 px-3">
+                  <div class="col-12 col-lg-5 d-flex flex-column pt-5 px-3 pb-3 border border-2 rounded-3 shadow-sm">
                     <div class="service-detail-container d-flex">
                       <div class="col-6  d-flex flex-column">
                         <div class="company-logo d-flex align-items-start">
