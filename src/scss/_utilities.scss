@@ -10,24 +10,18 @@ $utilities: (
     ),
   ),
 
-  // "gap": (
-  //   "prefix": "gap",
-  //   "values": (
-  //     "",
-  //   ),
-  // )
-  "font-style":
-    (
-      "prefix": "font",
-      "values": (
-        "uppercase": uppercase,
-      ),
+  "font-style": (
+    "prefix": "font",
+    "values": (
+      "uppercase": uppercase,
     ),
+  ),
 
   "font-size": (
     "prefix": "font",
     "values": (
       "sx": $base-font-size / 1.3,
+      "smx": $base-font-size * 1.2,
       "sm": $base-font-size * 2.7,
       "md": $base-font-size * 4,
       "xxxl": $base-font-size * 23,

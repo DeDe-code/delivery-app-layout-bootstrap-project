@@ -7,6 +7,7 @@
 }
 
 body {
+  font-size: $base-font-size;
   font-family: $bs-font-sans-serif;
   background-color: $base-body-bg;
 }
@@ -38,8 +39,7 @@ button {
 // test CSS
 
 :root {
-  --bs-danger-text-emphasis: #e85748;
-  --bs-focus-ring-color: #007a95;
+  --bs-focus-ring-color: #ff1540;
 }
 
 .partner-logo-wrapper {
@@ -47,45 +47,7 @@ button {
   height: 7rem;
 }
 
-@media screen and (max-width: 768px) {
-  .button-wrapper a {
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-  }
-
-  .button-wrapper a:hover {
-    margin-left: 1rem;
-  }
-}
-
 .form-control,
 .form-select {
   background-color: #f8f5f1;
-}
-
-@media screen and (min-width: 992px) {
-  img {
-    width: 20rem;
-    top: -7rem;
-    left: 25rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  img {
-    width: 20rem;
-    top: -7rem;
-    left: 29rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  img {
-    width: 20rem;
-    top: -8rem;
-    left: 33rem;
-  }
 }

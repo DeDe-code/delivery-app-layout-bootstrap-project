@@ -9,7 +9,7 @@ const formInterior = document.querySelector(".form-interior");
 btnInterior.addEventListener("click", () => {
   formInterior.classList.add("d-flex");
   formAbroad.classList.add("d-none");
-  btnInterior.classList.add("bg-custom-white");
+  btnInterior.classList.add("bg-drap");
   btnAbroad.classList.add("bg-black");
   btnAbroad.classList.add("text-custom-white");
 
@@ -17,20 +17,20 @@ btnInterior.addEventListener("click", () => {
   formAbroad.classList.remove("d-block");
   btnInterior.classList.remove("bg-black");
   btnInterior.classList.remove("text-custom-white");
-  btnAbroad.classList.remove("bg-custom-white");
+  btnAbroad.classList.remove("bg-drap");
 });
 
 btnAbroad.addEventListener("click", () => {
   formAbroad.classList.add("d-flex");
   formInterior.classList.add("d-none");
-  btnAbroad.classList.add("bg-custom-white");
+  btnAbroad.classList.add("bg-drap");
   btnInterior.classList.add("bg-black");
   btnInterior.classList.add("text-custom-white");
 
   formAbroad.classList.remove("d-none");
   formInterior.classList.remove("d-block");
   btnAbroad.classList.remove("bg-black");
-  btnInterior.classList.remove("bg-custom-white");
+  btnInterior.classList.remove("bg-drap");
   btnAbroad.classList.remove("text-custom-white");
 });
 
