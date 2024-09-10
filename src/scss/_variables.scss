@@ -1,13 +1,15 @@
 /** @format */
 
 $colors: (
-  "custom-white": #f8f9fa,
   "bej": #fbe1bc,
   "bej-light": #2c7865,
   "black": #000,
   "black-light": #04353a,
+  "blue-light": #8da9c4,
   "blue": #390099,
   "blue-dark": #133b52,
+  "custom-white": #f8f9fa,
+  "drap": #faf0ca,
   "gray-light": #e9f2f8,
   "gray": #d4d4ca,
   "gray-dark": #4e6c7d,
@@ -21,11 +23,12 @@ $colors: (
   "orange": #ff5400,
   "orange-dark": #fc8f1a,
   "orange-light": #ffa500,
+  "yellow-light": #fcbf49,
   "yellow": #ffbd00,
 );
 
 // padding
-$base-padding: 1rem;
+$base-spacing: 1rem;
 
 // background
 $base-body-bg: #04353a;

@@ -6,16 +6,23 @@ $utilities: (
   "padding": (
     "prefix": "p",
     "values": (
-      "custom-3": $base-padding * 0.75,
+      "custom-3": $base-spacing * 0.75,
     ),
   ),
 
-  "font-style": (
-    "prefix": "font",
-    "values": (
-      "uppercase": uppercase,
+  // "gap": (
+  //   "prefix": "gap",
+  //   "values": (
+  //     "",
+  //   ),
+  // )
+  "font-style":
+    (
+      "prefix": "font",
+      "values": (
+        "uppercase": uppercase,
+      ),
     ),
-  ),
 
   "font-size": (
     "prefix": "font",
